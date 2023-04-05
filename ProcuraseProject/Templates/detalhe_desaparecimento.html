@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block contentarea %}
+{% load static %} 
+<center>
+
+    <div class="container">
+                 
+            <div class="container-image">
+                <div>
+                    <img src="{% static desaparecimento.foto %}" alt="Sem foto" width="290px" height="220px"/>
+                    
+                        <h3>{{ pessoa.nome }}, {{ pessoa.data_nascimento }} anos</h3>
+                       
+                </div>
+            </div>
+
+            <div class="container-image">
+                <div style="width: 340px; text-align: justify;">
+                    
+                    <p style="padding: 5px 5px;"><strong>Nome comlpeto:</strong> {{ pessoa.nome }}</p>
+                    <p style="padding: 5px 5px;"><strong>Idade:</strong> {{ idade }} anos</p>
+                    <p style="padding: 5px 5px;"><strong>Desaparecido(a) desde:</strong> {{ desaparecimento.data_desaparecimento }}</p>
+                    <p style="padding: 5px 5px;"><strong>Motivo de desaparecimento:</strong> {{ motivo_desaparecimento.descricao }}</p>
+                    <p style="padding: 5px 5px;"><strong>Telefone 1:</strong> {{ contato_desaparecimento.numero_telefone_1 }}</p>
+                    <p style="padding: 5px 5px;"><strong>Telefone 2:</strong> {{ contato_desaparecimento..numero_telefone_1 }}</p>
+                       
+                </div>
+            </div>
+        
+    </div>
+
+    <input type=button value="Voltar" onClick="javascript:history.go(-1);">
+</center>
+{% endblock %}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <!--<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>-->
+    <link rel="stylesheet" type="text/css" href="{% static 'MyApp/css/style.css' %}"/>
+</head>
+<body>
+
+    
+
+    <!--Navigation Section Stop-->
+    <img src="{% static 'MyApp/images/banner.png' %}" alt="Sem foto" height="220px" style="float: left;" />
+    <img src="{% static 'MyApp/images/banner-2.png' %}" alt="Sem foto" height="220px" />
+    <div class="navbar_top" style="background-color: #333; overflow: hidden;">
+        <a href="index.html" style="float: left; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;">Inicio</a>
+        <a href="procurar.html" style="float: left; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;">Procurar</a>
+        <a href="estudos.html" style="float: left; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;">Estudos</a>
+    </div>  
+    
+    <!--Navigation Section Stop-->
+
+    <!--Content Section Start-->
+    <div style="margin-top: 5px; margin-bottom: 5px;">
+        {% block contentarea %}
+        {% endblock %}
+    </div>
+    <!--Content Section Stop-->
+    
+    <div style="float:none;"></div>
+    <div style="margin-top: 5px; margin-bottom: 5px; float: none;">
+        
+        <footer style="background-color: #333; height: 150px;">
+            <center style="color: white; margin-top: 15px;">
+                <p>2023 &copy; Hackware</p>
+            </center>
+            
+        </footer>
+    </div>
+    <!--Footer Section Stop-->    
+</body>
+</html>
+
+
+

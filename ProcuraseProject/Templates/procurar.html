@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block contentarea %}
+{% load static %} 
+<center>
+    <h2>Procurar pessoas desaparecidas</h2>
+    <input type="text" style="width: 500px; height: 20px; margin-bottom: 5px;" placeholder="Escreva o nome aqui...">
+</center>
+    <hr>
+
+    <center style="padding: 5px 5px;">
+        <label for="idade">Idade:</label>
+        <select name="idade" id="idade">
+            <option value="">Terceira idade</option>
+            <option value="">Adulto</option>
+            <option value="">Jovem</option>
+            <option value="">Crianca</option>
+        </select>
+
+        <label for="sexo">Sexo:</label>
+        <select name="sexo" id="sexo">
+            <option value="">Feminino</option>
+            <option value="">Masculino</option>
+        </select>
+
+        <label for="provincia">Provincia:</label>        
+        <select name="provincia" id="Provincia">
+            {% for provincia in provincias %}
+                <option value="">{{ provincia.nome }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="sexo">Ano do desaparecimento:</label>
+        <select name="ano" id="ano">
+            <option value="">2023</option>
+            <option value="">2022</option>
+            <option value="">2021</option>
+            <option value="">2020</option>
+            <option value="">2019</option>
+            <option value="">2018</option>
+            <option value="">2017</option>
+            <option value="">2016</option>
+            <option value="">2015</option>
+            <option value="">2014</option>
+            <option value="">2013</option>
+        </select>
+    </center>
+
+    <hr>
+    <div class="container">
+        {% for desaparecimento in desaparecimentos %}            
+            <div class="container-image">
+                <div class="image">
+                    <img src="{% static desaparecimento.foto %}" alt="Sem foto" width="190px" height="150px"/>
+                    {% for pessoa in pessoas %}
+                        {% if pessoa.id == desaparecimento.pessoa_id %}
+                            <p>{{ pessoa.id }}, {{ desaparecimento.pessoa_id }}</p>
+                            <h3>{{ pessoa.nome }}, {{ pessoa.data_nascimento }} anos</h3>
+                            <a href="{% url 'detalhe_desaparecimento' desaparecimento.id %}">Ver Detalhes</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    
+{% endblock %}

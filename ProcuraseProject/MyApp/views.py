@@ -1,0 +1,70 @@
+from django.shortcuts import render
+from .models import Pessoa
+from .models import Provincia
+from .models import Municipio
+from .models import Comuna
+from .models import Bairro
+from .models import Morada
+from .models import GrauParentesco
+from .models import Estado
+from .models import Desaparecimento
+from .models import Deficiencia
+from .models import ContatoDesaparecimento
+from .models import MotivoDesaparecimento
+
+from .utils import get_idade
+
+
+
+# Create your views here.
+
+def index(request):
+    context={}
+    return render(request, 'index.html', context)
+
+def home(request):
+    context={}
+    return render(request,'base.html', context)
+
+def sobre(request):
+    context={}
+    return render(request,'sobre.html', context)
+
+def procurar(request):
+    mydata2 = Desaparecimento.objects.all().values()
+
+    mydata = Pessoa.objects.all().values()
+
+    mydata_provincia = Provincia.objects.all().values()
+
+    context = {
+        'desaparecimentos': mydata2,
+        'pessoas': mydata,
+        'provincias': mydata_provincia
+    }
+    return render(request,'procurar.html', context)
+
+def estudos(request):
+    context={}
+    return render(request,'estudos.html', context)
+
+def detalhe_desaparecimento(request, id):
+    
+    mydata_desaparecimento = Desaparecimento.objects.get(id=id)
+
+    mydata_pessoa = Pessoa.objects.get(id=mydata_desaparecimento.pessoa_id)
+
+    idade = get_idade(mydata_pessoa.data_nascimento.year)
+
+    mydata_motivo_desaparecimento = MotivoDesaparecimento.objects.get(id=mydata_desaparecimento.motivo_desaparecimento_id)
+    #mydata_contato_desaparecimento = ContatoDesaparecimento.objects.get(desaparecimento=mydata_desaparecimento)
+    context={
+        'desaparecimento': mydata_desaparecimento,
+        'pessoa': mydata_pessoa,
+        'motivo_desaparecimento': mydata_motivo_desaparecimento,
+        'idade': idade,
+        #'contato_desaparecimento': mydata_contato_desaparecimento,
+    }
+    return render(request,'detalhe_desaparecimento.html', context)
+
+
