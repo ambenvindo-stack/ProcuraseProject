@@ -47,6 +47,7 @@
     </center>
 
     <hr>
+
     <div class="container">
         {% for desaparecimento in desaparecimentos %}            
             <div class="container-image">
@@ -54,8 +55,7 @@
                     <img src="{% static desaparecimento.foto %}" alt="Sem foto" width="190px" height="150px"/>
                     {% for pessoa in pessoas %}
                         {% if pessoa.id == desaparecimento.pessoa_id %}
-                            <p>{{ pessoa.id }}, {{ desaparecimento.pessoa_id }}</p>
-                            <h3>{{ pessoa.nome }}, {{ pessoa.data_nascimento }} anos</h3>
+                            <h3>{{ pessoa.nome }} anos</h3>
                             <a href="{% url 'detalhe_desaparecimento' desaparecimento.id %}">Ver Detalhes</a>
                         {% endif %}
                     {% endfor %}

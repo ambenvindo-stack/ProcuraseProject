@@ -31,22 +31,38 @@ def sobre(request):
     return render(request,'sobre.html', context)
 
 def procurar(request):
-    mydata2 = Desaparecimento.objects.all().values()
+    mydata_desaparecimentos = Desaparecimento.objects.all().values()
 
-    mydata = Pessoa.objects.all().values()
+    mydata_pessoa = Pessoa.objects.all().values()
+
+    lista_idades = calcular_idade(mydata_pessoa)
 
     mydata_provincia = Provincia.objects.all().values()
 
     context = {
-        'desaparecimentos': mydata2,
-        'pessoas': mydata,
-        'provincias': mydata_provincia
+        'desaparecimentos': mydata_desaparecimentos,
+        'pessoas': mydata_pessoa,
+        'provincias': mydata_provincia,
+        'lista_idades': lista_idades
     }
     return render(request,'procurar.html', context)
+
+
+def calcular_idade(mydata_pessoa):
+    lista_idades = []
+    lista_pessoa = Pessoa.objects.all().values()
+    print(lista_pessoa)
+    i = 1
+    #for i in Pessoa.objects.count:
+        # lista_idades[i] = get_idade(lista_pessoa[i].data_nascimento.year)
+    return lista_idades
+    
+
 
 def estudos(request):
     context={}
     return render(request,'estudos.html', context)
+
 
 def detalhe_desaparecimento(request, id):
     
@@ -66,5 +82,6 @@ def detalhe_desaparecimento(request, id):
         #'contato_desaparecimento': mydata_contato_desaparecimento,
     }
     return render(request,'detalhe_desaparecimento.html', context)
+
 
 

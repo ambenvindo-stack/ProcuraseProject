@@ -1,6 +1,81 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/amarus/Desktop/Workspace/DropdownNavbarProject/db.sqlite3" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="3209"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,20:mainMyApp_grauparentesco"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="MyApp_bairro" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="18"/><column index="2" value="37"/><column index="3" value="63"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="MyApp_grauparentesco" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="23"/><column index="2" value="67"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="MyApp_pessoa" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="18"/><column index="2" value="110"/><column index="3" value="95"/><column index="4" value="60"/><column index="5" value="61"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="MyApp_provincia" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="87"/><column index="2" value="270"/></column_widths><filter_values><column index="1" value="1"/><column index="2" value="Luanda"/></filter_values><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">SELECT * FROM MyApp_contatodesaparecimento;
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/amarus/Desktop/Workspace/DropdownNavbarProject/db.sqlite3" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="3209"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,21:mainMyApp_desaparecimento"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="MyApp_bairro" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort><column index="2" mode="0"/></sort><column_widths><column index="1" value="18"/><column index="2" value="52"/><column index="3" value="63"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="MyApp_contatodesaparecimento" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="18"/><column index="2" value="81"/><column index="3" value="102"/><column index="4" value="104"/><column index="5" value="111"/><column index="6" value="108"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="MyApp_desaparecimento" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="46"/><column index="2" value="124"/><column index="3" value="141"/><column index="4" value="91"/><column index="5" value="78"/><column index="6" value="57"/><column index="7" value="150"/><column index="8" value="59"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="MyApp_motivodesaparecimento" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="18"/><column index="2" value="106"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="MyApp_municipio" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="18"/><column index="2" value="76"/><column index="3" value="69"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="MyApp_pessoa" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="126"/><column index="2" value="37"/><column index="3" value="95"/><column index="4" value="32"/><column index="5" value="61"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="MyApp_provincia" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="18"/><column index="2" value="47"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">--INSERT INTO MyApp_provincia (nome)  VALUES('Ángel Gisbert');
+--INSERT INTO MyApp_provincia (nome)  VALUES('Ángel Gisbert');
+--INSERT INTO MyApp_provincia (nome)  VALUES('Ángel Gisbert');
+--INSERT INTO MyApp_provincia (nome)  VALUES('Ángel Gisbert');
+--INSERT INTO MyApp_provincia (nome)  VALUES('Ángel Gisbert');
+--INSERT INTO MyApp_provincia (nome)  VALUES('Ángel Gisbert');
+--INSERT INTO MyApp_provincia (nome)  VALUES('Ángel Gisbert');
+--INSERT INTO MyApp_provincia (nome)  VALUES('Ángel Gisbert');
+--INSERT INTO MyApp_provincia (nome)  VALUES('Ángel Gisbert');
+--INSERT INTO MyApp_provincia (nome)  VALUES('Ángel Gisbert');
+--INSERT INTO MyApp_provincia (nome)  VALUES('Ángel Gisbert');
+--INSERT INTO MyApp_provincia (nome)  VALUES('Ángel Gisbert');
+--INSERT INTO MyApp_provincia (nome)  VALUES('Ángel Gisbert');
+--INSERT INTO MyApp_provincia (nome)  VALUES('Ángel Gisbert');
+--INSERT INTO MyApp_provincia (nome)  VALUES('Ángel Gisbert');
+--INSERT INTO MyApp_provincia (nome)  VALUES('Ángel Gisbert');
+--INSERT INTO MyApp_provincia (nome)  VALUES('Ángel Gisbert');
 
+
+--SELECT * FROM MyApp_desaparecimento;
+
+--UPDATE MyApp_desaparecimento SET pessoa_id = 2 WHERE id = 2;
+
+--UPDATE MyApp_desaparecimento SET pessoa_id = 3 WHERE id = 3;
+
+--UPDATE MyApp_desaparecimento SET pessoa_id = 3 WHERE id = 3;
+
+--UPDATE MyApp_desaparecimento SET pessoa_id = 4 WHERE id = 4;
+
+--UPDATE MyApp_desaparecimento SET pessoa_id = 5 WHERE id = 5;
+
+--UPDATE MyApp_desaparecimento SET pessoa_id = 6 WHERE id = 6;
+
+--UPDATE MyApp_desaparecimento SET pessoa_id = 7 WHERE id = 7;
+
+--UPDATE MyApp_desaparecimento SET pessoa_id = 8 WHERE id = 8;
+
+
+--INSERT INTO MyApp_desaparecimento (pessoa_id, estado_id, deficiencia_id, motivo_desaparecimento_id, data_desaparecimento, foto, observacao)  
+--VALUES(1, 1, 1, 1, '2023-01-10', 'Sem foto', 'Sem observacao');
+
+--INSERT INTO MyApp_desaparecimento (pessoa_id, estado_id, deficiencia_id, motivo_desaparecimento_id, data_desaparecimento, foto, observacao)  
+--VALUES(1, 1, 1, 1, '2023-01-10', 'MyApp/images/ayo-ogunseinde-sibVwORYqs0-unsplash.jpg', 'Sem observacao');
+
+--INSERT INTO MyApp_desaparecimento (pessoa_id, estado_id, deficiencia_id, motivo_desaparecimento_id, data_desaparecimento, foto, observacao)  
+--VALUES(1, 1, 1, 1, '2023-01-10', 'MyApp/images/matheus-ferrero-W7b3eDUb_2I-unsplash.jpg', 'Sem observacao');
+
+--INSERT INTO MyApp_desaparecimento (pessoa_id, estado_id, deficiencia_id, motivo_desaparecimento_id, data_desaparecimento, foto, observacao)  
+--VALUES(1, 1, 1, 1, '2023-01-10', 'MyApp/images/eye-for-ebony-aZzXKGcyWqk-unsplash.jpg', 'Sem observacao');
+
+--INSERT INTO MyApp_desaparecimento (pessoa_id, estado_id, deficiencia_id, motivo_desaparecimento_id, data_desaparecimento, foto, observacao)  
+--VALUES(1, 1, 1, 1, '2023-01-10', 'MyApp/images/jurica-koletic-7YVZYZeITc8-unsplash.jpg', 'Sem observacao');
+
+--INSERT INTO MyApp_desaparecimento (pessoa_id, estado_id, deficiencia_id, motivo_desaparecimento_id, data_desaparecimento, foto, observacao)  
+--VALUES(1, 1, 1, 1, '2023-01-10', 'MyApp/images/charles-etoroma-95UF6LXe-Lo-unsplash.jpg', 'Sem observacao');
+
+--INSERT INTO MyApp_desaparecimento (pessoa_id, estado_id, deficiencia_id, motivo_desaparecimento_id, data_desaparecimento, foto, observacao)  
+--VALUES(1, 1, 1, 1, '2023-01-10', 'MyApp/images/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg', 'Sem observacao');
+
+--INSERT INTO MyApp_desaparecimento (pessoa_id, estado_id, deficiencia_id, motivo_desaparecimento_id, data_desaparecimento, foto, observacao)  
+--VALUES(1, 1, 1, 1, '2023-01-10', 'MyApp/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg', 'Sem observacao');
+
+
+--SELECT * FROM MyApp_pessoa;
 /*
+INSERT INTO MyApp_pessoa (nome, sexo, data_nascimento, morada_id)  VALUES('Ángel Gisbert', 'Masculino', '1997-03-12', 1);
+INSERT INTO MyApp_pessoa (nome, sexo, data_nascimento, morada_id)  VALUES('Isa Larrañaga', 'Feminino', '2011-11-10', 1);
+INSERT INTO MyApp_pessoa (nome, sexo, data_nascimento, morada_id)  VALUES('Heliodoro Carbajo', 'Masculino', '1988-03-05', 1);
+INSERT INTO MyApp_pessoa (nome, sexo, data_nascimento, morada_id)  VALUES('Camiricio Báez', 'Masculino', '2006-11-11', 1);
+INSERT INTO MyApp_pessoa (nome, sexo, data_nascimento, morada_id)  VALUES('Aurelia Marquez', 'Feminino', '2010-03-05', 1);
+INSERT INTO MyApp_pessoa (nome, sexo, data_nascimento, morada_id)  VALUES('Guillermo Gisbert', ' Masculino', '2003-02-05', 1);
+INSERT INTO MyApp_pessoa (nome, sexo, data_nascimento, morada_id)  VALUES('Ariel Neira', 'Feminino', '2010-10-10', 1);
+INSERT INTO MyApp_pessoa (nome, sexo, data_nascimento, morada_id)  VALUES('Porfirio Río', ' Masculino', '1991-09-04', 1);
+
+
+--SELECT * FROM MyApp_contatodesaparecimento;
+
+*/
 INSERT INTO MyApp_contatodesaparecimento (desaparecimento_id, grau_parentesco_id, nome_parente, numero_telefone_1, numero_telefone_2) VALUES (1, 4, 'Zamora Bárcena', 956121890, 991543210);
 INSERT INTO MyApp_contatodesaparecimento (desaparecimento_id, grau_parentesco_id, nome_parente, numero_telefone_1, numero_telefone_2) VALUES (1, 3, 'Del Díaz',  956120890, 912243210);
 INSERT INTO MyApp_contatodesaparecimento (desaparecimento_id, grau_parentesco_id, nome_parente, numero_telefone_1, numero_telefone_2) VALUES (1, 7, 'Rodriguez Castells',  926121890, 951543210);
@@ -9,5 +84,5 @@ INSERT INTO MyApp_contatodesaparecimento (desaparecimento_id, grau_parentesco_id
 INSERT INTO MyApp_contatodesaparecimento (desaparecimento_id, grau_parentesco_id, nome_parente, numero_telefone_1, numero_telefone_2) VALUES (1, 3, 'Vall Larrañaga',  946121890, 951543213);
 INSERT INTO MyApp_contatodesaparecimento (desaparecimento_id, grau_parentesco_id, nome_parente, numero_telefone_1, numero_telefone_2) VALUES (1, 4, 'Villalba Torre',  916121899, 911534215);
 INSERT INTO MyApp_contatodesaparecimento (desaparecimento_id, grau_parentesco_id, nome_parente, numero_telefone_1, numero_telefone_2) VALUES (1, 3, 'Campoy Rico',  926141596, 921553412);
-INSERT INTO MyApp_contatodesaparecimento (desaparecimento_id, grau_parentesco_id, nome_parente, numero_telefone_1, numero_telefone_2) VALUES (1, 3, 'Zamora Bárcena', 912121393, 912513311);
+
 	</sql><current_tab id="0"/></tab_sql></sqlb_project>
